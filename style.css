@@ -65,7 +65,8 @@ body {
 #title {
   font-family: Goozette;
   font-weight: bold;
-  font-size: 9vh;
+  font-size: 5.3vw;
+  width: 29vw;
   margin: 10px;
   z-index: 52;
   color: #fff;
