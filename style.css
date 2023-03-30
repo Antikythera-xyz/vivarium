@@ -207,24 +207,30 @@ img {
 }
 
 .imgRow {
-  width: 55vw;
   display: flex;
   margin: 8vh 0;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
 }
 
-.imgRow img {
+.side img {
   width: 25vw;
 }
 
-.imgRowCenter {
-  display: flex;
-  margin: 8vh 0;
-  flex-direction: row;
+.wide {
+  width: 55vw;
+}
+
+.slightWide img {
+  width: 55vw;
+}
+
+.spread {
+  justify-content: space-between;
+}
+
+.center {
   justify-content: center;
-  align-items: center;
 }
 
 .imgStickyBg {
@@ -259,6 +265,11 @@ h3 {
 
 #vivariumBlur {
   margin-top: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #vivariumBlur p {
