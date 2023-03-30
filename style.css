@@ -5,22 +5,39 @@
 }
 
 @font-face {
-    font-family: Lucette;
-    src: url(fonts/Lucette-Regular.woff);
-    font-weight: normal;
+    font-family: InriaSans;
+    src: url(fonts/InriaSans-Light.ttf);
+    font-weight: lighter;
 }
 
 @font-face {
-    font-family: Lucette;
-    src: url(fonts/Lucette-RegularItalic.woff);
+    font-family: InriaSans;
+    src: url(fonts/InriaSans-LightItalic.ttf);
     font-style: italic;
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: PunkNova;
+    src: url(fonts/punknova-regular.otf);
+}
+
+@font-face {
+    font-family: FerriteCore;
+    src: url(fonts/FerriteCoreDX-Regular.otf);
+}
+
+@font-face {
+    font-family: Autopia;
+    src: url(fonts/Autopia-Regular.ttf);
 }
 
 html, body {
-    font-family: Lucette;
+    font-family: InriaSans;
     color: #222;
     font-size: 24px;
     margin: 0px;
+    font-weight: lighter;
 }
 
 html {
@@ -28,30 +45,29 @@ html {
 }
 
 body {
-  height: 100%;
-  background: black;
+  background-image: linear-gradient(to left top, #1e4258, #1c3c54, #1a364f, #18314a, #172b45, #182a45, #1a2946, #1c2846, #212c4c, #262f52, #2b3358, #30375e);
+  background-attachment: fixed;
 }
+
 
 /* HEADER */
 .banner {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   position: fixed;
   top: 0;
   width: 100%;
   flex-wrap: wrap;
   z-index: 48;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  background: linear-gradient(rgba(22, 35, 62, 0.8), rgba(0, 0, 0, 0));
 }
 
 #title {
-  /* display: none; */
   font-family: Goozette;
   font-weight: bold;
-  font-size: 10vh;
+  font-size: 9vh;
   margin: 10px;
   z-index: 52;
-  justify-content: center;
   color: #fff;
   opacity: 0.8;
 }
@@ -81,15 +97,6 @@ a {
   transition: all 1s ease-out;
 }
 
-
-.titleText {
-  font-family: ArchivoBlack;
-  font-size: 20vh;
-  font-weight: bold;
-  color: #f9ed32;
-  text-align: center;
-}
-
 #toc {
   display: block;
   margin-top: 40vh;
@@ -98,8 +105,6 @@ a {
 
 .contents {
   margin: 11vh 15vw;
-  transition: all 1s ease;
-  -webkit-transition: all 1s ease;
 }
 
 h1 {
@@ -107,7 +112,8 @@ h1 {
   font-weight: lighter;
   font-stretch: expanded;
   font-size: 6.1vh;
-  color: #d3d3d3;
+  color: white;
+  opacity: 0.8;
 }
 
 .contents h1 {
@@ -115,12 +121,7 @@ h1 {
   margin-block-end: 0px;
 }
 
-.contents:hover {
-
-}
-
 .contents p {
-
   font-style: italic;
   font-size: 2vh;
   color: #d3d3d3;
@@ -128,7 +129,7 @@ h1 {
 }
 
 #vid {
-  margin-top: 40vh;
+  margin-top: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -140,41 +141,29 @@ iframe {
   height: 540px;
 }
 
-iframe:hover {
-  transition: all .7s ease;
-  -webkit-transition: all .7s ease;
- filter: drop-shadow(0rem 0rem 0.5rem #EAB1CB);
-}
-
 
 h2 {
   font-family: Goozette;
-  font-weight: lighter;
-  font-stretch: expanded;
-  font-size: 3vh;
+  text-align: center;
+  font-size: 7vh;
   color: #d3d3d3;
   margin-block-start: 10vh;
   margin-block-end: 0px;
   z-index: 50;
+  width: 42vw;
 }
 
 .textSection {
-  margin-top: 50vh;
+  margin-top: 40vh;
   display: block;
   height: auto;
 }
 
 .textSection h1 {
-  top: 20vh;
-  height: 70vh;
-  z-index: 10;
-}
-
-.textSection h1:hover {
-  transition: all .7s ease;
-  -webkit-transition: all .7s ease;
-  text-shadow: 0px 0px 5px #EAB1CB;
-  filter: drop-shadow(0rem 0rem 0.4rem #EAB1CB);
+  top: 10px;
+  width: 42vw;
+  position: sticky;
+  z-index: 49;
 }
 
 .text {
@@ -187,12 +176,21 @@ h2 {
 .textSection p {
   width: 42vw;
   color: #d3d3d3;
-  font-family: Lucette;
+  font-family: InriaSans;
   font-stretch: condensed;
-  font-size: 2.4vh;
-  z-index: 2;
+  font-size: 2.3vh;
+  font-weight: lighter;
+  line-height: 3vh;
+  margin-bottom: 1vh;
 }
 
+.gameText p {
+  font-style: italic;
+  text-align: center;
+  width: 30vw;
+  font-size: 2.1vh;
+  line-height: 2.8vh;
+}
 
 img {
   max-width: 100%;
@@ -202,4 +200,33 @@ img {
 video {
   max-width: 100%;
   height: auto;
+}
+
+h3 {
+  text-align: left;
+  font-family: Goozette;
+  font-size: 4vh;
+  color: #d3d3d3;
+  margin-top: 10vh;
+  width: 42vw;
+}
+
+#game1 h2 {
+  font-family: PunkNova;
+  font-size: 5vh;
+}
+
+#game2 h2 {
+  font-family: FerriteCore;
+  font-size: 3.5vh;
+}
+
+#game3 h2 {
+  font-family: Autopia;
+  letter-spacing: 0.4vh;
+  font-size: 4.7vh;
+}
+
+#act3 {
+  margin-bottom: 40vh;
 }
