@@ -72,12 +72,14 @@ body {
 #title {
   font-family: Goozette;
   font-weight: bold;
-  font-size: 5.3vw;
+  font-size: 4.4vw;
   width: 29vw;
-  margin: 10px;
+  margin: 10px 3.5vw;
   z-index: 52;
   color: #fff;
   opacity: 0.8;
+  transform: scale(1.2,1);
+  -webkit-transform: scale(1.2,1);
 }
 
 a {
