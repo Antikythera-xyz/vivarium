@@ -21,7 +21,7 @@ ssBlur = document.getElementById("sensorimotorBlur");
 
 function onSensorimotorScroll () {
     var scrollPosition = window.scrollY;
-    var scrollTop = document.body.scrollTop + window.innerHeight/2;
+    var scrollTop = document.body.scrollTop + 2*window.innerHeight/3;
     // Determine if position is at a certain point
     if (scrollTop > ssBlur.getBoundingClientRect().top) {
         ss.classList.add("blur");
@@ -38,7 +38,7 @@ pBlur = document.getElementById("platformerBlur");
 
 function onPlatformerScroll () {
     var scrollPosition = window.scrollY;
-    var scrollTop = document.body.scrollTop + window.innerHeight/2;
+    var scrollTop = document.body.scrollTop + 2*window.innerHeight/3;
     // Determine if position is at a certain point
     if (scrollTop > pBlur.getBoundingClientRect().top) {
         p.classList.add("blur");
@@ -56,7 +56,7 @@ mBlur = document.getElementById("mmarpgBlur");
 
 function onMMARPGScroll () {
     var scrollPosition = window.scrollY;
-    var scrollTop = document.body.scrollTop + window.innerHeight/2;
+    var scrollTop = document.body.scrollTop + 2*window.innerHeight/3;
     // Determine if position is at a certain point
     if (scrollTop > mBlur.getBoundingClientRect().top) {
         m.classList.add("blur");

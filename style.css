@@ -278,7 +278,7 @@ h3 {
 }
 
 .blur {
-  filter: blur(7px) brightness(60%) saturate(60%);
+  filter: blur(7px) brightness(60%) saturate(80%);
 }
 
 #vivariumBlur {
