@@ -73,10 +73,9 @@ header {
 
 #title {
   font-family: Goozette;
-  font-weight: bold;
   font-size: 4.4vw;
-  width: 29vw;
-  margin: 10px 3.5vw;
+  width: auto;
+  margin: 10px 3.3vw;
   z-index: 52;
   color: #fff;
   opacity: 0.8;
@@ -96,7 +95,6 @@ header {
 
   #title {
     font-size: 13vw;
-    width: 100%;
     margin-top: 30vh;
     text-align: center;
   }
