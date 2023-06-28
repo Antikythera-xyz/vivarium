@@ -65,10 +65,10 @@ h1, h2, h3 {
 }
 
 h2 {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
     padding: 0;
     margin: 0;
-    line-height: 3.25rem;
+    line-height: 2.75rem;
 }
 h3{
     font-size: 1.35rem;
@@ -78,6 +78,10 @@ h3{
 
 .hiLight {
     color: $secondClr;
+}
+
+header img, img {
+    filter: drop-shadow(0px 3px 2px $secondClr);
 }
 
 .header {
@@ -110,10 +114,6 @@ h3{
 }
 
 
-img {
-    filter: drop-shadow(0px 3px 2px $secondClr);
-}
-
 section {
     width: 100%;
     height: 100vh;
@@ -132,13 +132,10 @@ section {
     justify-content: center;
     align-items: center;
     padding: 0;
-
 }
 
-.firstSec {
-    position: relative;
-}
-.essaySection {
+
+.firstSec, .essaySection {
     position: relative;
 }
 
@@ -196,8 +193,8 @@ section {
 
 }
 .vidCont iframe {
-    width: 80%;
-    height: 80%;
+    // width: 80%;
+    // height: 80%;
     border: $primaryClr solid 6px;
     filter: drop-shadow(0px 0px 30px $secondClr);
 
@@ -254,7 +251,9 @@ section {
     width: 180px;
     height: 180px;
     border-radius: 50%;
+    border: 1px solid #000000;
     background: $primaryClr;
+    transition: border-color 0.5s ease;
 }
 
 .text {
@@ -268,6 +267,8 @@ section {
     color: $thirdClr;
     text-shadow: 0px 0px 5px $secondClr;
     font-size: 20px;
+    transition: opacity .75s ease-in-out;
+
 }
 
 .column a {
@@ -294,11 +295,16 @@ section {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: 0.5s ease;
+    transition: opacity .75s ease-in-out;
 }
 
 .mItem:hover .overlay {
     opacity: 1;
+    
+}
+
+.mItem:hover {
+    border: $secondClr 1px solid;
 }
 
 .mItem:hover .text {
