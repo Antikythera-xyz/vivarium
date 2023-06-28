@@ -40,10 +40,10 @@ body {
     color: $primaryClr;
     font-size: $fontSize;
     margin: 0px;
+    background: $bgClr;
     overflow-x: hidden;
-    scroll-behavior: smooth;
     transition: all 0.5s ease;
-    background: #1f1f1f;
+
 
 }
 
@@ -100,7 +100,7 @@ h3{
 
 .header img {
     transition: $defaultTrans;
-    padding: 0px 60px 90px 60px;
+    padding: 20px 60px;
     height: 15vh;
 }
 
@@ -157,7 +157,7 @@ section {
     top: 0;
     left: 0;
     background: rgb(0, 0, 0);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 55%, #080808 62%, #1f1f1f 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 55%, rgba(8, 8, 8, 1) 62%, $bgClr 100%);
     z-index: 3;
 }
 .gradientBot {
@@ -165,13 +165,13 @@ section {
     height: 100%;
     top: 0;
     left: 0;
-    background: #1f1f1f;
-    background: linear-gradient(180deg, rgba(31, 31, 31, .2) 0%, rgba(31, 31, 31, 1) 0%, rgba(0,0,0,1) 100%);
+    background: rgb(116,124,116);
+    background: linear-gradient(180deg, rgba(116,124,116,1) 0%, rgba(116,124,116,1) 20%, rgba(27, 28, 27, 0.886) 74%, rgba(8,8,8,1) 90%, rgba(0,0,0,1) 100%);
     z-index: 0;
 }
 
 .info {
-    // background: $bgClr;
+    background: $bgClr;
 }
 
 .infoText {
@@ -179,10 +179,6 @@ section {
     padding: 50px;
     gap: 3rem;
     text-align: justify;
-}
-
-.infoText h2 {
-    color: $bgClr;
 }
 
 
@@ -203,28 +199,10 @@ section {
 
 }
 
-.floating { 
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px;
-}
- 
-@keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }   
-}
-
 .matrixWrapper {
-    background: linear-gradient(190deg, #919d8c, #44473e);
+    background: linear-gradient(180deg, #8f8f7e, #6f6e5c);
     padding: 50px;
     max-width: 50vw;
-    box-shadow: 34px 34px 60px #000;
-    z-index: 100;
-
 }
 
 .matrixWrapper h2 {
@@ -266,8 +244,9 @@ section {
     align-items: center;
     justify-content: center;
     color: $thirdClr;
-    text-shadow: 0px 0px 5px $secondClr;
     font-size: 20px;
+    text-shadow: 0px 0px 12px $secondClr;
+
 }
 
 .column a {
@@ -303,6 +282,10 @@ section {
 
 .mItem:hover .text {
     opacity: 0;
+}
+
+.humCat {
+    max-width: 6vw;
 }
 
 .creditSection {
