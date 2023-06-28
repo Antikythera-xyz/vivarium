@@ -1,5 +1,3 @@
 # Vivarium
 
-Sara Drake, Christina Lu, Imran Sekalala
-
-Recursive Simulations
+Will Fruedenheim, Christina Lu, Dalena Tran
