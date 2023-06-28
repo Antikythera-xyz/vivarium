@@ -35,10 +35,10 @@ h1, h2, h3 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.25rem;
   padding: 0;
   margin: 0;
-  line-height: 4.25rem;
+  line-height: 3.25rem;
 }
 
 h3 {
