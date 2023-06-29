@@ -44,6 +44,7 @@ body {
     scroll-behavior: smooth;
     transition: all 0.5s ease;
     background: $bgClr;
+    border: solid 1.25vh $bgClr;
 
 }
 
@@ -62,7 +63,8 @@ a:hover {
 
 h1,
 h2,
-h3 {
+h3, 
+h4 {
     font-family: $Kapitol;
 }
 
@@ -74,9 +76,18 @@ h2 {
 }
 
 h3 {
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 0;
+    line-height: 2.75rem;
+
+}
+
+h4 {
     font-size: 1.35rem;
     padding: 0;
     margin: 0;
+    font-weight: bold;
 }
 
 .hiLight {
@@ -84,7 +95,7 @@ h3 {
 }
 
 header img,
-img {
+.image {
     filter: drop-shadow(0px 3px 2px $secondClr);
 }
 
@@ -211,7 +222,7 @@ img {
 
 .vidWrap {
     
-    max-width: 65%;
+    max-width: 55%;
     display: block;
     margin: 0 auto;
     padding-top: 20vh;
@@ -223,7 +234,7 @@ img {
 }
 
 .matrixWrapper {
-    background: linear-gradient(190deg, #919d8c, #44473e);
+    background: linear-gradient(190deg, #919d8c, #4f584f);
     padding: 50px;
     max-width: 50vw;
     box-shadow: 34px 34px 60px #000;
@@ -232,11 +243,16 @@ img {
 
 }
 
-.matrixWrapper h2 {
+.matrixWrapper h3 {
     text-align: center;
     color: $secondClr;
     text-shadow: 3px 3px 10px $secondClr;
 }
+
+.matrixWrapper h4 {
+    text-transform: uppercase;
+}
+
 
 .matrix {
     display: grid;
@@ -260,7 +276,7 @@ img {
     height: 180px;
     border-radius: 50%;
     border: 1px solid #000000;
-    background: $primaryClr;
+    background: none;
     transition: border-color 0.5s ease;
 }
 
@@ -313,6 +329,7 @@ img {
 
 .mItem:hover {
     border: $secondClr 1px solid;
+    background: $primaryClr;
 }
 
 .mItem:hover .text {
@@ -328,7 +345,7 @@ img {
 }
 
 .credits {
-    width: 100%;
+    max-width: 75%;
     display: flex;
     flex-direction: row;
     padding: 0px 50px;
@@ -345,13 +362,20 @@ img {
     color: $thirdClr;
 }
 
+.antiLogo {
+    margin-top: 4vh;
+    width: 60%;
+    transition: all 0.5s ease;
+}
+.antiLogo:hover {
+    filter: drop-shadow(0px 3px 2px #9AFE27);
+}
 .email {
-    width: 100%;
+    width: 75%;
     margin-top: 10vh;
 }
 
 .email div {
-    padding: 0px 50px;
     color: $thirdClr;
 }
 
