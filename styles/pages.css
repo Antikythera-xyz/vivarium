@@ -1,22 +1,32 @@
 @font-face {
-  font-family: "Walter Alte";
+  font-family: WalterAlte;
   src: url("../fonts/ABCWalterAlte-Rauchwaren.woff2");
 }
+
 @font-face {
   font-family: "Kapitol";
   src: url("../fonts/Kapitol-Regular.woff2");
 }
+
+@font-face {
+  font-family: "Kapitol";
+  src: url("../fonts/Kapitol-Medium.otf");
+  font-weight: bolder;
+}
+
 html,
 body {
   scroll-behavior: smooth;
-  font-family: "Walter Alte", Helvetica, Arial, sans-serif;
-  color: #D4D3A6;
+  font-family: WalterAlte, Helvetica, Arial, sans-serif;
+  color: #747C74;
   font-size: 1.15rem;
   margin: 0px;
   overflow-x: hidden;
   scroll-behavior: smooth;
   transition: all 0.5s ease;
-  background: #1F2020;
+  background: #000;
+  width: 100vw;
+  height: 100vh;
 }
 
 a {
@@ -30,115 +40,80 @@ a:hover {
   text-shadow: 0px 3px 5px #9AFE27;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h3 {
   font-family: "Kapitol", Helvetica, Arial, sans-serif;
 }
 
-h2 {
-  font-size: 3rem;
-  padding: 0;
-  margin: 0;
-  line-height: 2.75rem;
-  color: #9AFE27;
-}
 
 h3 {
-  font-size: 2.5rem;
+  color:#9AFE27;
+  font-size: 3.5rem;
   padding: 0;
   margin: 0;
-  line-height: 2.75rem;
+  text-align: center;
 }
 
-h4 {
-  font-size: 1.35rem;
-  padding: 0;
-  margin: 0;
-  font-weight: bold;
+/* HEADER */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
-.hiLight {
-  color: #9AFE27;
+.logo {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 3;
+
 }
 
-header img {
-  filter: drop-shadow(0px 3px 2px #9AFE27);
+.logo a {
+  padding: 0px 20px;
 }
 
-.header-alt {
+.logo img {
+  filter: drop-shadow(3px 3px 10px #9AFE27);
+  width: 100%;
+}
+
+.logo-alt {
+  height: 3vw;
+  padding-top: 3.5vw;
   position: fixed;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100%;
-  transition: transform 0.8s cubic-bezier(0.42, 0, 0.15, 1.4);
-  z-index: 200;
+
 }
 
-.header-alt img {
-  width: 24vw;
-  padding: 30px 50px;
+.logo-alt img {
+  max-height: 4vw;
 }
 
-.sec {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow-y: hidden;
-}
-
-.browser {
-  width: 100%;
-  height: 100%;
-  min-height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
+.grad {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(31, 31, 31, 0.2637429972) 54%, rgba(8, 8, 8, 0.7007177871) 79%, rgb(0, 0, 0) 100%);
+  z-index: 2;
 }
 
 .sec0 {
-  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 1;
 }
 
-.gradTop {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgb(17, 17, 17);
-  background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(31, 31, 31, 0.2637429972) 54%, rgba(8, 8, 8, 0.7007177871) 79%, rgb(0, 0, 0) 100%);
-  z-index: 3;
-}
+/* MAIN */
 
-.sec1 {
+main {
   background: url("../img/bgGrid.PNG") no-repeat center bottom;
   background-size: cover;
 }
-
-.sec1 .browser {
-  justify-content: start;
+.sec1 {
+  color: #D4D3A6;
 }
 
-.credits {
-  max-width: 75%;
-  display: flex;
-  flex-direction: row;
-  padding: 0px 50px;
-  justify-content: space-evenly;
-  z-index: 203;
-}
-
-.ssPage {
-  width: 75%;
-}
-
+/* CONTENT */
 .mItem {
   width: 180px;
   height: 180px;
@@ -159,6 +134,7 @@ header img {
   justify-content: center;
   align-items: center;
   gap: 80px;
+  /* padding-bottom: 50px; */
 }
 
 .mArrow {
@@ -171,9 +147,52 @@ header img {
   transition: all 0.5s ease;
 }
 
-.mArrow svg:hover {
-  fill: #D4D3A6;
-  filter: drop-shadow(2px 5px 3px #9AFE27);
+/* PAGE SPECIFIC */
+.sec_SS {
+  background: url('../img/matrix/ss_1.png')no-repeat center center;
+  background-size: cover;
+}
+.sec_CN {
+  background: url('../img/matrix/cn_1.png')no-repeat center center;
+  background-size: cover;
+}
+.sec_CS {
+  background: url('../img/matrix/cs_0.png')no-repeat center center;
+  background-size: cover;
+}
+.sec_OC {
+  background: url('../img/matrix/oc_0.png')no-repeat center center;
+  background-size: cover;
+}
+.sec_WC {
+  background: url('../img/matrix/wc_1.png')no-repeat center center;
+  background-size: cover;
+}
+.sec_MMARPG {
+  background: url('../img/Orbv1.png')no-repeat center center;
+  background-size: cover;
+}
+
+
+
+
+/* REPEATED STYLES */
+
+.content {
+  max-width: 75%;
+  padding: 15vw 10vw;
+  text-align: justify;
+}
+
+.fullPage {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .floating {
@@ -181,57 +200,74 @@ header img {
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  margin-right: 40px;
-  margin-top: 20px;
 }
 
 @keyframes floating {
   0% {
-    transform: translate(0, 0px);
+      transform: translate(0, 0px);
   }
+
   50% {
-    transform: translate(0, 15px);
+      transform: translate(0, 15px);
   }
+
   100% {
-    transform: translate(0, 0px);
+      transform: translate(0, 0px);
   }
 }
-.ssHeader {
-  background: url("../img/matrix/ss_1.png") no-repeat;
-  background-size: cover;
-}
 
-.cnHeader {
-  background: url("../img/matrix/cn_1.png") no-repeat;
-  background-size: cover;
-}
 
-.csHeader {
-  background: url("../img/matrix/cs_0.png") no-repeat;
-  background-size: cover;
-}
-
-.ocHeader {
-  background: url("../img/matrix/oc_0.png") no-repeat;
-  background-size: cover;
-}
-
-.wcHeader {
-  background: url("../img/matrix/wc_1.png") no-repeat;
-  background-size: cover;
-}
-
-.MMARPGHeader {
-  background: url("../img/matrix/cn_1.png") no-repeat;
-  background-size: cover;
-}
-
+/* RESPONSIVE */
 
 @media (max-width: 1350px) {
 
-
-  .header-alt img {
-    width: 35vw;
+  h3 {
+      font-size: 2.25rem;
   }
+
+}
+
+@media (max-width: 1200px) {
+  h3 {
+      font-size: 2rem;
+  }
+
+  .mItem {
+      width: 130px;
+      height: 130px;
+  }
+
+}
+
+@media (max-width: 960px) {
+
+  h3 {
+      padding-bottom: 30px;
+  }
+  
+  .logo img {
+      max-height: 6vw;
+      padding-top: 30px;
+  }
+  .logo-alt {
+    position:relative;
+  
+  }
+  .content {
+      max-width: 100%;
+  }
+
+}
+
+@media (max-width: 650px) {
+
+
+  .mItem {
+      width: 180px;
+      height: 180px;
+  }
+
+
+
 
 }
