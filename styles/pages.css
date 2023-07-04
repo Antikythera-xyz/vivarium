@@ -95,6 +95,11 @@ h3 {
   max-height: 4vw;
 }
 
+model-viewer {
+  height: inherit;
+  width: inherit;
+}
+
 .grad {
   grid-column: 1/2;
   grid-row: 1/2;
@@ -187,7 +192,7 @@ main {
 .content {
   max-width: 75%;
   padding: 15vw 10vw;
-  text-align: justify;
+  text-align: left;
 }
 
 .fullPage {
