@@ -61,6 +61,12 @@ h3 {
   grid-template-rows: 1fr;
 }
 
+/* .model {
+  z-index: 400;
+  position: absolute;
+
+} */
+
 .logo {
   width: 100%;
   grid-column: 1/2;
@@ -244,14 +250,14 @@ main {
   h3 {
       padding-bottom: 30px;
   }
-  
+
   .logo img {
       max-height: 6vw;
       padding-top: 30px;
   }
   .logo-alt {
     position:relative;
-  
+
   }
   .content {
       max-width: 100%;
