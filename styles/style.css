@@ -37,7 +37,7 @@ a {
 
 a:hover {
   color: #D4D3A6;
-  text-shadow: 0px 3px 5px #9AFE27;
+  text-shadow: 1px 1px 3px #9AFE27;
 }
 
 h1,
@@ -174,7 +174,8 @@ h4 {
   border-radius: 50%;
   border: 1px solid #000000;
   background: none;
-  transition: border-color 0.5s ease;
+  transition: all .7s ease;
+  -webkit-transition: all .7s ease;
 }
 
 .text {
@@ -212,7 +213,8 @@ h4 {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: opacity 0.75s ease-in-out;
+  transition: all .7s ease;
+ -webkit-transition: all .7s ease;
 }
 
 .mItem:hover .overlay {
@@ -220,8 +222,10 @@ h4 {
 }
 
 .mItem:hover {
-  border: #9AFE27 1px solid;
   background: #1F2020;
+  text-shadow: none;
+  transition: all .7s ease;
+  -webkit-transition: all .7s ease;
 }
 
 .mItem:hover .text {
@@ -268,7 +272,7 @@ h4 {
 }
 
 .antiLogo:hover {
-  filter: drop-shadow(0px 3px 2px #9AFE27);
+  filter: drop-shadow(2px 2px 3px #9AFE27);
 }
 
 .credit {
@@ -368,6 +372,9 @@ h4 {
   .mItem {
       width: 130px;
       height: 130px;
+      transition: all .7s ease;
+      -webkit-transition: all .7s ease;
+
   }
 
   .text {
@@ -420,6 +427,9 @@ h4 {
 
   .mItem {
       border: 2px solid #D4D3A6;
+      transition: all .7s ease;
+      -webkit-transition: all .7s ease;
+
   }
 
   .credit {
@@ -452,6 +462,8 @@ h4 {
   .mItem {
       width: 180px;
       height: 180px;
+      transition: all .7s ease;
+      -webkit-transition: all .7s ease;
   }
 
   .text {
