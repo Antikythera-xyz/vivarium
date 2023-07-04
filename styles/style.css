@@ -80,16 +80,16 @@ h4 {
   grid-column: 1/2;
   grid-row: 1/2;
   z-index: 3;
-  
-}
-
-.logo a {
-  padding: 0px 20px;
 }
 
 .logo img {
   filter: drop-shadow(3px 3px 10px #9AFE27);
   width: 100%;
+}
+
+.logo model-viewer {
+  width: inherit;
+  height: inherit;
 }
 
 .logo-init {
@@ -100,7 +100,6 @@ h4 {
   height: 1vw;
   padding-top: 3.5vw;
   position: fixed;
-
 }
 
 .logo-alt img {
@@ -246,14 +245,13 @@ h4 {
   color: #D4D3A6;
   font-family: WalterAlte, Helvetica, Arial, sans-serif;
   font-weight: normal;
-  font-size: 1.05rem;
+  font-size: .8rem;
   padding-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: end;
 
 }
-
 
 .cBox b {
   color: #9AFE27;
@@ -274,9 +272,9 @@ h4 {
 }
 
 .credit {
-  max-width: 75vw;
+  max-width: 90vw;
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 4vw;
   grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
   grid-template-rows: 1fr 1fr;
 }
@@ -430,7 +428,7 @@ h4 {
       grid-gap: 0;
   }
   .content {
-      
+
       max-width: 100%;
   }
 
