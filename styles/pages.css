@@ -96,8 +96,7 @@ h3 {
 }
 
 model-viewer {
-  height: 300px;
-  width: 600px;
+  height: 3vw;
   display: block;
 }
 
