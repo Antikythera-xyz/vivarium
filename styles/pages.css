@@ -61,22 +61,12 @@ h3 {
   grid-template-rows: 1fr;
 }
 
-/* .model {
-  z-index: 400;
-  position: absolute;
-
-} */
-
 .logo {
   width: 100%;
   grid-column: 1/2;
   grid-row: 1/2;
   z-index: 3;
 
-}
-
-.logo a {
-  padding: 0px 20px;
 }
 
 .logo img {
@@ -86,7 +76,7 @@ h3 {
 
 .logo-alt {
   height: 3vw;
-  padding-top: 3.5vw;
+  margin-top: 3.5vw;
   position: fixed;
 
 }
@@ -96,7 +86,8 @@ h3 {
 }
 
 model-viewer {
-  height: 3vw;
+  height: 20vw;
+  width: 60vw;
   display: block;
 }
 
