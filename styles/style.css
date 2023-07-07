@@ -124,6 +124,11 @@ h4 {
 
 /* MAIN */
 
+.sec1 .content {
+  padding: 3vw;
+  background: radial-gradient(rgba(80, 75, 70, 1) 35%, rgba(116, 124, 116, .3));
+}
+
 .sec1,
 .sec1 a {
   color: #D4D3A6;
@@ -293,7 +298,7 @@ h4 {
 
 .content {
   max-width: 75%;
-  padding-top: 10vw;
+  margin-top: 10vw;
 }
 
 .fullPage {
