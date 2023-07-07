@@ -53,13 +53,13 @@ h4 {
 
 h2 {
   font-family: WalterAlte;
-  font-size: 1.45rem;
+  font-size: 1rem;
   padding: 0;
   margin: 0;
 }
 
 h3 {
-  font-size: 3.5rem;
+  font-size: 3.4vw;
   padding: 0;
   margin: 0;
   font-family: "KapitolSemiBold";
@@ -134,6 +134,18 @@ h4 {
 .sec1 .content {
   padding: 3vw;
   background: radial-gradient(rgba(80, 75, 70, 1) 35%, rgba(116, 124, 116, .3));
+  border: .5px solid #9AFE27;
+  max-width: 60%;
+  text-align: justify;
+}
+
+.float {
+  width: 48%;
+  float: left;
+}
+
+#right {
+  padding-left: 2vw;
 }
 
 .sec1,
@@ -164,7 +176,6 @@ h4 {
   text-align: center;
   color: #9AFE27;
   margin-bottom: 2vw;
-  font-size: 3.4vw;
 }
 
 .matrix {
@@ -283,10 +294,10 @@ h4 {
 
 /* VIDEO */
 .vidWrap {
-  max-width: 55%;
+  max-width: 70%;
   display: block;
   margin: 0 auto;
-  padding: 15vw 0;
+  padding-top: 20vw;
 }
 
 /* FOOTER */
@@ -298,16 +309,21 @@ h4 {
   color: #D4D3A6;
   font-family: WalterAlte, Helvetica, Arial, sans-serif;
   font-weight: normal;
-  font-size: .8rem;
+  font-size: .7rem;
   padding-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: end;
+}
 
+.footer .content {
+  max-width: 80%;
 }
 
 .cBox b {
   color: #9AFE27;
+  font-family: "KapitolMedium";
+  text-transform: uppercase;
 }
 
 .cBox a {
@@ -342,7 +358,7 @@ h4 {
 
 .content {
   max-width: 75%;
-  margin-top: 10vw;
+  margin-top: 20vw;
 }
 
 .fullPage {
@@ -382,7 +398,7 @@ h4 {
 
 @media (max-width: 1700px) {
   h2 {
-      font-size: 1.25rem;
+      font-size: 1rem;
   }
 }
 
@@ -407,12 +423,40 @@ h4 {
       max-width: 75vw;
   }
 
+  #ss {
+    height: 4vw;
+  }
+
+  #cn {
+    height: 10vw;
+  }
+
+  #cs {
+    margin-left: 0.2vw;
+    height: 9vw;
+  }
+
+  #oc {
+    height: 11vw;
+    margin-top: 0.6vw;
+  }
+
+  #wc {
+    height: 10vw;
+    margin-top: 0.6vw;
+  }
+
+  #mma {
+    height: 10vw;
+    margin-top: .1vw;
+  }
+
 }
 
 @media (max-width: 1200px) {
   h3 {
-      font-size: 2rem;
-  }0
+      font-size: 1.8rem;
+  }
 
   h4 {
       font-size: 1.45rem;
@@ -428,11 +472,6 @@ h4 {
 
   .text {
       font-size: 16px;
-  }
-
-  .overlay img {
-      max-width: 50%;
-      max-height: 50%;
   }
 
   .credit {
@@ -460,13 +499,23 @@ h4 {
     position:relative;
   }
 
+  .float {
+    width: 100%;
+    float: none;
+  }
+
+  #right {
+    padding-left: 0;
+    padding-top: 25px;
+  }
+
   .mResp {
       display: none;
   }
 
   .matrixWrapper {
       background: none;
-      padding: 50px;
+      padding: 0;
       box-shadow: none;
   }
 
@@ -486,18 +535,19 @@ h4 {
       flex-direction: column;
       grid-gap: 0;
   }
-  .content {
-
-      max-width: 100%;
-  }
 
   .sec1 .content {
-      padding: 0px 50px;
+      padding: 0;
+      background: black;
+      border-style: none;
+      max-width: 75%;
   }
 
   .sec1 .content h2 {
       text-align: left;
   }
+
+
 
 }
 
@@ -506,6 +556,7 @@ h4 {
 
   .matrix {
       grid-template-columns: 1fr;
+      grid-gap: 4vw;
   }
 
   .mItem {
@@ -523,7 +574,32 @@ h4 {
       font-size: .95rem;
   }
 
+  #ss {
+    height: 8.2vw;
+  }
 
+  #cn {
+    height: 18.4vw;
+  }
 
+  #cs {
+    margin-left: 0.2vw;
+    height: 18vw;
+  }
+
+  #oc {
+    height: 22.4vw;
+    margin-top: 1vw;
+  }
+
+  #wc {
+    height: 20.8vw;
+    margin-top: 1.2vw;
+  }
+
+  #mma {
+    height: 20.8vw;
+    margin-top: .1vw;
+  }
 
 }

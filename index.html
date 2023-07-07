@@ -24,6 +24,7 @@
     <main class="fullPage">
         <div class="sec1 fullPage flexCenter">
             <div class="content">
+              <div class="float" id="left">
                 <h2>Embodied intelligence refers to types of cognition in which the “body” plays a decisive role.
                     Artificializing such processes is necessary for AI to make the leap from language-wielding to
                     world-making. Yet training in the real world is prohibitively expensive, impossible to
@@ -32,7 +33,8 @@
                     iteration, broad proliferation, and streamlined data synthesis in pursuit of embodied
                     intelligence. Negotiating the intricacies of human interaction also becomes possible at scale
                     within them.
-                </h2><br />
+                </h2></div>
+                <div class="float" id="right">
                 <h2>
                     If AI agents are to exist in the real world, they will require a collaborative repository and
                     training platform: Vivarium, a diverse ecosystem of interoperable toy worlds. Composed of an
@@ -43,6 +45,7 @@
                     they take; they will rehearse and scaffold complex embodied intelligence across the sim to the
                     real. Through Vivarium, an unrecognizable world remade by physicalized AI becomes possible.
                 </h2>
+                </div>
                 <br>
                 <a href="./docs/Vivarium_290623.pdf" target="_blank">
                     <h2>Read ⟶</h2>
@@ -79,9 +82,12 @@
                             </div>
                         </div>
                         <div class="column mResp">
-                            <div class="mItem">
+                            <div class="mItem" onclick="popup('cossimPop')">
                                 <div class="text">Cosmology<br>Simulation</div>
                                 <div class="overlay">
+                                </div>
+                                <div id="cossimPop">
+
                                 </div>
                             </div>
                         </div>
@@ -184,7 +190,7 @@
                         height: 0;
                         overflow: hidden;
                         max-width: 100%;
-                        border: 1px solid #9AFE27;
+                        border: .5px solid #9AFE27;
                     }
 
                     .embed-container iframe,
@@ -256,6 +262,9 @@
                             Special thanks to Nicolas Berggruen, Nils Gilman, Dawn Nakagawa, Justin Rosenstein, and Raphael
                             Arar
                             for their visionary support and participation.
+                        </p>
+                        <p>
+                            Additional thanks to Sara Drake and Imran Sekalala for ideating and contributing to the first iteration of this project.
                         </p>
                         <a href="https://antikythera.org" target="_blank"><img class="antiLogo"
                                 src="./img/antikythera.svg" alt=""></a>
