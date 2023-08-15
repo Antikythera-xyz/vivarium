@@ -196,6 +196,22 @@ h4 {
   transition: opacity 0.75s ease-in-out;
 }
 
+.glowing {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    color: #D4D3A6;
+    text-shadow: 0 0 0px #9AFE27;
+  }
+  to {
+    color: #9AFE27;
+    text-shadow: 0 0 10px #9AFE27;
+  }
+}
+
 .column a {
   text-decoration: none;
 }
