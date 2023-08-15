@@ -119,9 +119,8 @@ h4 {
   padding: 3vw;
   text-align: left;
   text-shadow: 0 0 15px #9AFE27;
-  /* border: 1.5px solid #9AFE27; */
+  border: 1.5px solid #9AFE27;
   border-radius: 75px;
-  box-shadow: 0 0 30px 5px #9AFE27;
 }
 
 .sec1 h4 {
