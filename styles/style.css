@@ -48,7 +48,7 @@ a {
 
 a:hover {
   color: #D4D3A6;
-  text-shadow: 0 0 5px #9AFE27, 0 0 8px #9AFE27, 0 0 10px #9AFE27
+  text-shadow: 0 0 5px #9AFE27, 0 0 10px #9AFE27
 }
 
 h1,
@@ -118,11 +118,17 @@ h4 {
   max-width: 100%;
   padding: 3vw;
   text-align: left;
-  text-shadow: 0 0 5px #9AFE27;
+  text-shadow: 0 0 15px #9AFE27;
+  border: 1.5px solid #9AFE27;
+  border-radius: 75px;
 }
 
 .sec1 h4 {
   text-align: left;
+}
+
+.sec1 h2 {
+  text-align: justify;
 }
 
 .half {
@@ -285,7 +291,7 @@ h4 {
 
 
 .footer {
-  color: #D4D3A6;
+  color: #9AFE27;
   font-family: WalterAlte, Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: .7rem;
@@ -306,7 +312,7 @@ h4 {
 }
 
 .cBox a {
-  color: #D4D3A6;
+  color: #9AFE27;
 }
 
 .antiLogo {
