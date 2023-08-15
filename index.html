@@ -12,47 +12,42 @@
 <body>
 
     <header class="header fullPage">
-        <div class="logo logo-init flexCenter floating">
+        <div class="logo flexCenter floating half">
           <model-viewer alt="3D logo for Vivarium." src="./img/logo.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate disable-zoom poster="./img/logo_black.svg" shadow-intensity="1" environment-image="legacy"></model-viewer>
         </div>
-        <div class="sec0 fullPage">
-
+        <div class="sec1 flexCenter half">
+          <div class="content">
+              <h4>Vivarium is an ecosystem of “toy worlds”: gamified simulations in which different human-AI configurations scaffold complex embodied intelligence.</h3>
+              <br />
+              <h2>Embodied intelligence refers to types of cognition in which the “body” plays a decisive role.
+                  Artificializing such processes is necessary for AI to make the leap from language-wielding to
+                  world-making. Yet training in the real world is prohibitively expensive, impossible to
+                  parallelize, and difficult to control. Instead, agents are trained in toy worlds: controlled
+                  simulations in which reality is abstracted into a bounded domain. Toy worlds allow for quick
+                  iteration, broad proliferation, and streamlined data synthesis in pursuit of embodied
+                  intelligence. Negotiating the intricacies of human interaction also becomes possible at scale
+                  within them.
+              </h2>
+              <br />
+              <h2>
+                  If AI agents are to exist in the real world, they will require a collaborative repository and
+                  training platform: Vivarium, a diverse ecosystem of interoperable toy worlds. Composed of an
+                  asset store, a simulation engine, and a toy world library, Vivarium turns training embodied
+                  agents into play. Within these gamified worlds, different genres of human-AI configurations
+                  encourage learning from basic movement to interactive negotiation, adversarial feints to
+                  stigmergic coordination. Future agents will have sensoriums as diverse as the physical forms
+                  they take; they will rehearse and scaffold complex embodied intelligence across the sim to the
+                  real. Through Vivarium, an unrecognizable world remade by physicalized AI becomes possible.
+              </h2>
+              <br>
+              <a href="./docs/Vivarium_290623.pdf" target="_blank">
+                  <h2>Read ⟶</h2>
+              </a>
+          </div>
         </div>
-        <div class="grad fullPage"></div>
     </header>
-    <header class="header"></header>
     <main class="fullPage">
-        <div class="sec1 fullPage flexCenter">
-            <div class="content">
-              <div class="float" id="left">
-                <h2>Embodied intelligence refers to types of cognition in which the “body” plays a decisive role.
-                    Artificializing such processes is necessary for AI to make the leap from language-wielding to
-                    world-making. Yet training in the real world is prohibitively expensive, impossible to
-                    parallelize, and difficult to control. Instead, agents are trained in toy worlds: controlled
-                    simulations in which reality is abstracted into a bounded domain. Toy worlds allow for quick
-                    iteration, broad proliferation, and streamlined data synthesis in pursuit of embodied
-                    intelligence. Negotiating the intricacies of human interaction also becomes possible at scale
-                    within them.
-                </h2></div>
-                <div class="float" id="right">
-                <h2>
-                    If AI agents are to exist in the real world, they will require a collaborative repository and
-                    training platform: Vivarium, a diverse ecosystem of interoperable toy worlds. Composed of an
-                    asset store, a simulation engine, and a toy world library, Vivarium turns training embodied
-                    agents into play. Within these gamified worlds, different genres of human-AI configurations
-                    encourage learning from basic movement to interactive negotiation, adversarial feints to
-                    stigmergic coordination. Future agents will have sensoriums as diverse as the physical forms
-                    they take; they will rehearse and scaffold complex embodied intelligence across the sim to the
-                    real. Through Vivarium, an unrecognizable world remade by physicalized AI becomes possible.
-                </h2>
-                </div>
-                <br>
-                <a href="./docs/Vivarium_290623.pdf" target="_blank">
-                    <h2>Read ⟶</h2>
-                </a>
-            </div>
-        </div>
-        <div class="sec2 fullPage flexCenter">
+        <div class="sec2 fullPage flexCenter panel">
             <div class="content">
                 <div class="matrixWrapper floating">
                     <h3>HUMAN-AI CONFIGURATIONS</h3>
@@ -181,7 +176,7 @@
                 </div>
             </div>
         </div>
-        <div class="sec3 fullPage">
+        <div class="sec3 fullPage panel">
             <div class="vidWrap">
                 <style>
                     .embed-container {
@@ -190,7 +185,10 @@
                         height: 0;
                         overflow: hidden;
                         max-width: 100%;
-                        border: .5px solid #9AFE27;
+                        box-shadow:
+                          0 0 60px 30px #fff,  /* inner white */
+                          0 0 100px 60px #f0f, /* middle magenta */
+                          0 0 140px 90px #0ff; /* outer cyan */
                     }
 
                     .embed-container iframe,

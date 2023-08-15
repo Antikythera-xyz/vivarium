@@ -29,9 +29,15 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   transition: all 0.5s ease;
-  background: #000;
   width: 100vw;
   height: 100vh;
+}
+
+body {
+  background-image: url("../img/bgGrid.PNG");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 a {
@@ -42,7 +48,7 @@ a {
 
 a:hover {
   color: #D4D3A6;
-  text-shadow: 1px 1px 3px #9AFE27;
+  text-shadow: 0 0 5px #9AFE27, 0 0 8px #9AFE27, 0 0 10px #9AFE27
 }
 
 h1,
@@ -77,80 +83,55 @@ h4 {
 /* HEADER */
 
 .header {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
+  flex-direction: row;
 }
 
 .logo {
-  width: 100%;
-  grid-column: 1/2;
-  grid-row: 1/2;
-  z-index: 3;
-}
-
-.logo img {
-  filter: drop-shadow(3px 3px 10px #9AFE27);
-  width: 100%;
+  height: 100vh;
 }
 
 .logo model-viewer {
-  width: inherit;
-  height: inherit;
-}
-
-.logo-init {
-  height: 100%;
-}
-
-.logo-alt {
-  height: 1vw;
-  padding-top: 3.5vw;
-  position: fixed;
-}
-
-.logo-alt img {
-  max-height: 4vw;
+  width: 90%;
+  height: 90%;
 }
 
 .grad {
   grid-column: 1/2;
   grid-row: 1/2;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(31, 31, 31, 0.2637429972) 54%, rgba(8, 8, 8, 0.7007177871) 79%, rgb(0, 0, 0) 100%);
   z-index: 2;
 }
 
 .sec0 {
-  background: url('../img/Orbv3.png')no-repeat center center;
-  background-size: cover;
   grid-column: 1/2;
   grid-row: 1/2;
   z-index: 1;
 }
 
+/* CAROUSEL */
+
+
 /* MAIN */
 
 .sec1 .content {
+  margin-top: 0;
+  max-width: 100%;
   padding: 3vw;
-  background: radial-gradient(rgba(80, 75, 70, 1) 35%, rgba(116, 124, 116, .3));
-  border: .5px solid #9AFE27;
-  max-width: 60%;
-  text-align: justify;
+  text-align: left;
+  text-shadow: 0 0 5px #9AFE27;
 }
 
-.float {
+.sec1 h4 {
+  text-align: left;
+}
+
+.half {
   width: 48%;
-  float: left;
-}
-
-#right {
-  padding-left: 2vw;
 }
 
 .sec1,
 .sec1 a {
-  color: #D4D3A6;
+  color: #9AFE27;
 }
 
 .sec3 {
@@ -304,8 +285,6 @@ h4 {
 
 
 .footer {
-  background: url("../img/bgGrid.PNG") no-repeat center bottom;
-  background-size: cover;
   color: #D4D3A6;
   font-family: WalterAlte, Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -337,7 +316,7 @@ h4 {
 }
 
 .antiLogo:hover {
-  filter: drop-shadow(2px 2px 3px #9AFE27);
+  filter: drop-shadow(0px 0px 10px #9AFE27);
 }
 
 .credit {
