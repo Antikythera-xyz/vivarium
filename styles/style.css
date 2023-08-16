@@ -34,21 +34,68 @@ body {
 }
 
 body {
-  background-image: url("../img/bgGrid.PNG");
+  /* background-image: url("../img/bgGrid.PNG");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; */
+}
+
+#bgImage {
+  position: fixed;
+
+  top: 0;
+  right: 0;
+
+  width: 100%;
+  height: auto;
+
+  z-index: -10;
+
+  animation-name: kenburns;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes kenburns {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+  30% {
+    -webkit-transform: scale(1.2) translateY(-15px) rotate(2deg);
+    transform: scale(1.2) translateY(-15px) rotate(2deg);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+  }
+  50% {
+    -webkit-transform: scale(1.1) translateX(-15px);
+    transform: scale(1.1) translateX(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+  70% {
+    -webkit-transform: scale(1.2) translateX(15px) rotate(-2deg);
+    transform: scale(1.2) translateX(15px) rotate(-2deg);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+  }
+  100% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
 }
 
 a {
-  color: #1F2020;
   transition: all 0.5s ease;
   text-decoration: none;
 }
 
 a:hover {
-  color: #D4D3A6;
-  text-shadow: 0 0 5px #9AFE27, 0 0 10px #9AFE27
+  text-shadow: 0 0 10px #9AFE27;
 }
 
 h1,
@@ -118,9 +165,9 @@ h4 {
   max-width: 100%;
   padding: 3vw;
   text-align: left;
-  text-shadow: 0 0 15px #9AFE27;
   border: 1.5px solid #9AFE27;
   border-radius: 75px;
+  filter: drop-shadow(0px 0px 5px #9AFE27);
 }
 
 .sec1 h4 {
@@ -310,6 +357,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: end;
+  filter: drop-shadow(0px 0px 5px #9AFE27);
 }
 
 .footer .content {
