@@ -7,17 +7,19 @@
 @font-face {
   font-family: "Kapitol";
   src: url("../fonts/Kapitol-Regular.woff2");
-  font-weight: normal;
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "KapitolMedium";
   src: url("../fonts/Kapitol-Medium.otf");
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "KapitolSemiBold";
   src: url("../fonts/Kapitol-SemiBold.otf");
+  font-weight: 400;
 }
 
 ::-webkit-scrollbar {
@@ -110,10 +112,9 @@ a:hover {
   text-shadow: 0 0 10px #9AFE27;
 }
 
-h1,
-h3,
-h4 {
+h1 {
   font-family: "Kapitol", Helvetica, Arial, sans-serif;
+  font-weight: 400;
 }
 
 h2 {
@@ -129,6 +130,7 @@ h3 {
   padding: 0;
   margin: 0;
   font-family: "KapitolSemiBold";
+  font-weight: 400;
 }
 
 h4 {
@@ -137,7 +139,7 @@ h4 {
   margin: 0;
   font-family: "KapitolMedium";
   text-align: center;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 /* HEADER */
@@ -815,7 +817,7 @@ h4 {
 
   .modalBox {
     width: 90vw;
-    height: 95vh;
+    height: 85vh;
   }
 
   .modalContent {
@@ -824,13 +826,13 @@ h4 {
   }
 
   .catIcon {
-    width: 14vh;
-    height: 14vh;
+    width: 12vh;
+    height: 12vh;
   }
 
   .close {
-    width: 12vh;
-    height: 12vh;
+    width: 10vh;
+    height: 10vh;
   }
 
   .vidWrap {
