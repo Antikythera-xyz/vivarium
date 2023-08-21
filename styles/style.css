@@ -19,6 +19,19 @@
   src: url("../fonts/Kapitol-SemiBold.otf");
 }
 
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 0.5rem;
+}
+
 html,
 body {
   scroll-behavior: smooth;
@@ -27,7 +40,6 @@ body {
   font-size: 1.15rem;
   margin: 0px;
   overflow-x: hidden;
-  scroll-behavior: smooth;
   transition: all 0.5s ease;
   width: 100vw;
   height: 100vh;
@@ -154,6 +166,12 @@ h4 {
   padding: 3vw;
   text-align: left;
   filter: drop-shadow(0px 0px 5px #9AFE27);
+}
+
+.description {
+  max-height: 50vh;
+  overflow-y: auto;
+  margin: 1rem 0;
 }
 
 .sec1 h4 {
@@ -677,16 +695,30 @@ h4 {
       padding-bottom: 30px;
   }
 
+  .roundBorder {
+    border-width: 1px;
+    border-radius: 3rem;
+  }
+
   .header {
     flex-direction: column;
   }
 
-  .half {
+  .logo {
+    width: 100%;
+  }
+
+  .sec1 {
     width: 90%;
   }
 
   .sec1 .content {
-    padding: 6vw;
+    padding: 5vw;
+  }
+
+  .description {
+    max-height: none;
+    margin: 1rem 0;
   }
 
   .mResp {
@@ -705,7 +737,7 @@ h4 {
   }
 
   .mItem {
-      border: 2px solid #D4D3A6;
+      border: 1px solid #D4D3A6;
       transition: all .7s ease;
       -webkit-transition: all .7s ease;
 
@@ -739,11 +771,16 @@ h4 {
 
   .logo {
     width: 100vw;
-    height: 50vh;
+    height: 45vh;
+  }
+
+  .logo model-viewer {
+    width: 100%;
+    height: 100%;
   }
 
   .roundBorder {
-    border: 1.5px solid #9AFE27;
+    border-width: 1px;
     border-radius: 2rem;
   }
 
