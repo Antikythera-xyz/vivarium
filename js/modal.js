@@ -19,8 +19,14 @@ for (var cat of categories) {
 
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
+    if (event.target.classList.contains("modal")) {
+      // Get all elements with the class "modal"
+      const modalElements = document.querySelectorAll('.modal');
+
+      // Loop through each modal element and set display to "none"
+      modalElements.forEach(modal => {
+        modal.style.display = "none";
+      });
     }
   }
 }

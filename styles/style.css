@@ -209,7 +209,7 @@ h4 {
 .matrixWrapper {
   background: linear-gradient(190deg, #919d8c, #4f584f);
   padding: 2.4rem;
-  z-index: 100;
+  z-index: 15;
   color: #1F2020;
 }
 
@@ -340,7 +340,7 @@ h4 {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   left: 0;
   top: 0;
   width: 100%;
