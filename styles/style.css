@@ -33,13 +33,6 @@ body {
   height: 100vh;
 }
 
-body {
-  /* background-image: url("../img/bgGrid.PNG");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
-}
-
 #bgImage {
   position: fixed;
 
@@ -182,6 +175,7 @@ h4 {
 
 
 /* MATRIX */
+
 .sec2 .content {
   max-width: 50vw;
 }
@@ -313,7 +307,158 @@ h4 {
   margin-top: .075rem;
 }
 
+/* MODALS */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modalBox {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70vw; /* Could be more or less, depending on screen size */
+  height: 39.375vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.modalBox img {
+  width: inherit;
+  height: inherit;
+}
+
+.catIcon {
+  position: relative;
+  width: 8vw;
+  height: 8vw;
+  filter: drop-shadow(0px 0px 15px #9AFE27);
+}
+
+.catBlink {
+  position: absolute;
+  animation-name: blinking;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.blinkA {
+  animation-direction: alternate;
+}
+
+.blinkB {
+  animation-direction: alternate-reverse;
+}
+
+.modalContent {
+  width: 50%;
+  color: #9AFE27;
+  text-align: left;
+  filter: drop-shadow(0px 0px 5px #9AFE27);
+}
+
+.mBtn {
+  cursor: pointer;
+}
+
+.close {
+  width: 7vw;
+  height: 7vw;
+  filter: drop-shadow(0px 0px 5px #9AFE27);
+  transition: all .7s ease;
+  -webkit-transition: all .7s ease;
+}
+
+.close:hover,
+.close:focus {
+  cursor: pointer;
+  transition: all .7s ease;
+  -webkit-transition: all .7s ease;
+}
+
+#ssModal .modalBox {
+  background-image:
+    linear-gradient(
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+      ),
+    url("../img/matrix/ss_1.png");
+}
+
+#cnModal .modalBox {
+  background-image:
+    linear-gradient(
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+      ),
+    url("../img/matrix/cn_1.png");
+}
+
+#csModal .modalBox {
+  background-image:
+    linear-gradient(
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+      ),
+    url("../img/matrix/cs_2.png");
+}
+
+#ocModal .modalBox {
+  background-image:
+    linear-gradient(
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+      ),
+    url("../img/matrix/oc_0.png");
+}
+
+#wcModal .modalBox {
+  background-image:
+    linear-gradient(
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+      ),
+    url("../img/matrix/wc_1.png");
+}
+
+#mmModal .modalBox {
+  background-image:
+    linear-gradient(
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+      ),
+    url("../img/Orbv1.png");
+}
+
 /* VIDEO */
+
 .vidWrap {
   max-width: 70%;
   display: block;
@@ -322,6 +467,7 @@ h4 {
 }
 
 /* FOOTER */
+
 .footer {
   color: #9AFE27;
   font-family: WalterAlte, Helvetica, Arial, sans-serif;

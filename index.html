@@ -20,288 +20,400 @@
 </head>
 
 <body>
-  <img
-  id="bgImage"
-  src="./img/bgGrid.PNG"
-/>
-    <header class="header fullPage">
-        <div class="logo flexCenter floating half">
-          <model-viewer alt="3D logo for Vivarium." src="./img/logo.glb" ar ar-modes="webxr scene-viewer quick-look" auto-rotate disable-zoom poster="./img/logo_black.svg" shadow-intensity="1" environment-image="legacy"></model-viewer>
+  <img id="bgImage" src="./img/bgGrid.PNG"/>
+  <header class="header fullPage">
+      <div class="logo flexCenter floating half">
+        <model-viewer alt="3D logo for Vivarium." src="./img/logo.glb" ar ar-modes="webxr scene-viewer quick-look" auto-rotate disable-zoom poster="./img/logo_black.svg" shadow-intensity="1" environment-image="legacy"></model-viewer>
+      </div>
+      <div class="sec1 flexCenter half">
+        <div class="content roundBorder">
+            <h4>Vivarium is an ecosystem of “toy worlds”: gamified simulations in which different human-AI configurations scaffold complex embodied intelligence.</h3>
+            <br />
+            <h2>Embodied intelligence refers to types of cognition in which the “body” plays a decisive role.
+                Artificializing such processes is necessary for AI to make the leap from language-wielding to
+                world-making. Yet training in the real world is prohibitively expensive, impossible to
+                parallelize, and difficult to control. Instead, agents are trained in toy worlds: controlled
+                simulations in which reality is abstracted into a bounded domain. Toy worlds allow for quick
+                iteration, broad proliferation, and streamlined data synthesis in pursuit of embodied
+                intelligence. Negotiating the intricacies of human interaction also becomes possible at scale
+                within them.
+            </h2>
+            <br />
+            <h2>
+                If AI agents are to exist in the real world, they will require a collaborative repository and
+                training platform: Vivarium, a diverse ecosystem of interoperable toy worlds. Composed of an
+                asset store, a simulation engine, and a toy world library, Vivarium turns training embodied
+                agents into play. Within these gamified worlds, different genres of human-AI configurations
+                encourage learning from basic movement to interactive negotiation, adversarial feints to
+                stigmergic coordination. Future agents will have sensoriums as diverse as the physical forms
+                they take; they will rehearse and scaffold complex embodied intelligence across the sim to the
+                real. Through Vivarium, an unrecognizable world remade by physicalized AI becomes possible.
+            </h2>
+            <br>
+            <a href="./docs/Vivarium_290623.pdf" target="_blank">
+                <h2>Read ⟶</h2>
+            </a>
         </div>
-        <div class="sec1 flexCenter half">
-          <div class="content roundBorder">
-              <h4>Vivarium is an ecosystem of “toy worlds”: gamified simulations in which different human-AI configurations scaffold complex embodied intelligence.</h3>
+      </div>
+  </header>
+  <main class="fullPage">
+    <div id="ssModal" class="modal">
+      <div class="modalBox boxGlow">
+        <div class="catIcon">
+          <img src="./icons/modal/4_ss_a.svg" class="catBlink blinkA" alt="Sensorimotor Suite icon">
+          <img src="./icons/modal/4_ss_b.svg" class="catBlink blinkB" alt="Sensorimotor Suite">
+        </div>
+        <div class="modalContent">
+          <h2>
+            Sensorimotor suites contain hyper-accurate physics and mimic the real as closely as possible. Through fulfilling tasks within training loops run at accelerated time, individual AI agents learn the basics of embodiment: gross and fine motor skills, identifying objects, and interacting with environments.
+          </h2>
+          <br />
+          <h2>
+            The collective intelligence of human players is harnessed for developing worlds and training agents. Interoperable components for building sensorimotor simulations are available on the asset store; these include physically detailed objects and procedurally-generated layouts, but also well-defined tasks for agents to fulfill and benchmarks to measure their performance.
+          </h2>
+          <br />
+          <h2>
+            Players can also assemble agents from different “parts,” giving them varied forms, sensoriums, and skill suites. As agents improve, toy worlds challenge them with changing conditions, requiring aerial or amphibious capabilities. Certain game rules constrain player resources, motivating them to develop agents with optimal physical forms and minimum viable sensoriums for niche tasks.
+          </h2>
+        </div>
+        <div id="ssClose" class="close">
+            <img src="./icons/modal/close.svg" alt="X for close">
+        </div>
+      </div>
+    </div>
+    <div id="cnModal" class="modal">
+      <div class="modalBox boxGlow">
+        <div class="catIcon">
+          <img src="./icons/modal/5_cn_a.svg" class="catBlink blinkA" alt="CogNets icon">
+          <img src="./icons/modal/5_cn_b.svg" class="catBlink blinkB" alt="CogNets">
+        </div>
+        <div class="modalContent">
+          <h2>
+            Once agents are equipped with individual motor skills, they practice multi-agent coordination as cognitive networks, or CogNets, within toy worlds populated by many AIs. Agents are not cognitively discrete from one another as humans are: they can transmit lossless snapshots of mental states or “see” through the photoreceptors of another. Boundaries delineating networked agents are blurred.
+          </h2>
+          <br />
+          <h2>
+            Tasks can include monitoring endangered species across large areas or assembling industrial machinery in close quarters. Swarms learn to distribute cognition and communicate. Some have members equipped with different senses, requiring creative signaling to span different umwelts. Other worlds inhibit inter-agent communication entirely, forcing stigmergic coordination.
+          </h2>
+          <br />
+          <h2>
+            Over time, CogNets appear to behave as singular organisms. Agents operate at different scales; larger agents may even have “organs” composed of smaller ones. This nesting of cognition makes intelligence scaffolding and abiotic evolution possible, as agents recompose themselves of intelligent parts. These toy worlds lay the foundation for a planet populated by many minds at many scales.
+          </h2>
+        </div>
+        <div id="cnClose" class="close">
+            <img src="./icons/modal/close.svg" alt="X for close">
+        </div>
+      </div>
+    </div>
+    <div id="csModal" class="modal">
+      <div class="modalBox boxGlow">
+        <div class="catIcon">
+          <img src="./icons/modal/6_cs_a.svg" class="catBlink blinkA" alt="Centaur Syzygy icon">
+          <img src="./icons/modal/6_cs_b.svg" class="catBlink blinkB" alt="Centaur Syzygy">
+        </div>
+        <div class="modalContent">
+          <h2>
+            Beyond inter-agent coordination, embodied AI must also interact with humans. These interactions are facilitated in centaur syzygies, or close unions, where a player and an agent are tightly coupled together. Like CogNets, human and AI learn to distribute tasks according to capability and communicate across sensorium differentials.
+          </h2>
+          <br />
+          <h2>
+            A common paradigm on Vivarium sees players control an agent through remote sensing and top-down instruction. Within toy worlds, which allow flexible iteration yet maintain safety, humans trial offloading sensing, cognition, and labor to AI. If the future is populated by physicalized AI, humans must decide en masse the terms of their coexistence.
+          </h2>
+          <br />
+          <h2>
+            In all centaur pairings, the human offers dynamic yet noisy real-time input. Particular worlds invert expected paradigms of human executive control by granting the agent powerful sensing and decision-making faculties, reducing the human to physical appendage. In others, the pairing shares an interface such as a machinic exoskeleton and negotiates shared control over it.
+          </h2>
+        </div>
+        <div id="csClose" class="close">
+            <img src="./icons/modal/close.svg" alt="X for close">
+        </div>
+      </div>
+    </div>
+    <div id="ocModal" class="modal">
+      <div class="modalBox boxGlow">
+        <div class="catIcon">
+          <img src="./icons/modal/7_oc_a.svg" class="catBlink blinkA" alt="Omni-chimera icon">
+          <img src="./icons/modal/7_oc_b.svg" class="catBlink blinkB" alt="Omni-chimera">
+        </div>
+        <div class="modalContent">
+          <h2>
+            Omnidirectional chimeras, comprising a single human and many AI agents, synthesize skills acquired from CogNets and centaur syzygies. Humans operate at a higher level of physical abstraction within them; rather than provide close input to a single agent, they commandeer many.
+          </h2>
+          <br />
+          <h2>
+            Common scenarios have the human dispatching agents equipped with different skills for a complex task, such as operating massive vehicles or performing surgery. The agents must coordinate with one another while integrating high-level commands. Through continued training as omni-chimeras, human commands become less rigid as agents fulfill tasks with more abstract specifications.
+          </h2>
+        </div>
+        <div id="ocClose" class="close">
+            <img src="./icons/modal/close.svg" alt="X for close">
+        </div>
+      </div>
+    </div>
+    <div id="wcModal" class="modal">
+      <div class="modalBox boxGlow">
+        <div class="catIcon">
+          <img src="./icons/modal/8_wc_a.svg" class="catBlink blinkA" alt="Wetware Choreography icon">
+          <img src="./icons/modal/8_wc_b.svg" class="catBlink blinkB" alt="Wetware Choreography">
+        </div>
+        <div class="modalContent">
+          <h2>
+            On the other hand, toy worlds of a single AI juggling many humans invert omni-chimera setups, as the agent choreographs wetware. The agent integrates multiple streams of noisy human input, prioritizes signals across them, and ultimately instructs players to accomplish tasks. Concurrently, the humans in play practice interpersonal coordination.
+          </h2>
+          <br />
+          <h2>
+            What the agent learns varies according to the magnitude of human participants. Worlds with a handful of players entail synthesizing discordant commands cohesively, while worlds with hundreds or more players become studies of macro behavioral patterns. Within these toy worlds, agents learn a complex topology of human sociality, coordination, and control.
+          </h2>
+        </div>
+        <div id="wcClose" class="close">
+            <img src="./icons/modal/close.svg" alt="X for close">
+        </div>
+      </div>
+    </div>
+    <div id="mmModal" class="modal">
+      <div class="modalBox boxGlow">
+        <div class="catIcon">
+          <img src="./icons/modal/9_mm_a.svg" class="catBlink blinkA" alt="MMARPG icon">
+          <img src="./icons/modal/9_mm_b.svg" class="catBlink blinkB" alt="MMARPG">
+        </div>
+        <div class="modalContent">
+          <h2>
+            Many AIs interact with many humans within massively multi-agent roleplaying games, or MMARPGs. This configuration is the endpoint of possible toy worlds: a future where inter- and intra-human-AI communication amalgamates into a complex web of distributed embodied cognition. To reach this quadrant, each of the previous ones must build upon another.
+          </h2>
+          <br />
+          <h2>
+            Our present world is made solely in the image of the parochial human sensing-and-acting apparatus. Physicalized AI will remake it otherwise. Though embodied AI arises from human hand-holding within simulated reductions of the world as we know it, it will eventually allow embodied intelligence to transcend the boundaries of the body itself.
+          </h2>
+        </div>
+        <div id="mmClose" class="close">
+            <img src="./icons/modal/close.svg" alt="X for close">
+        </div>
+      </div>
+    </div>
+    <div class="sec2 fullPage flexCenter panel">
+        <div class="content">
+            <div class="matrixWrapper floating">
+                <h3 class="glowing">HUMAN-AI CONFIGURATIONS</h3>
+                <div class="matrix">
+                    <div class="column mTitle mResp">
+                        <div class="">
+                        </div>
+                    </div>
+                    <div class="column mTitle mResp">
+                        <div class="">
+                            <h4>NO AI</h4>
+                        </div>
+                    </div>
+                    <div class="column mTitle mResp">
+                        <div class="">
+                            <h4>SINGLE AI</h4>
+                        </div>
+                    </div>
+                    <div class="column mTitle mResp">
+                        <div class="">
+                            <h4>MANY AIs</h4>
+                        </div>
+                    </div>
+                    <div class="column mResp">
+                        <div class="humCat">
+                            <h4>NO<br />HUMAN</h4>
+                        </div>
+                    </div>
+                    <div class="column mResp">
+                        <div class="mItem">
+                            <div class="text">Cosmology<br>Simulation</div>
+                            <div class="overlay">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                      <div id="ssBtn" class="mItem mBtn">
+                          <div class="text glowing">Sensorimotor<br>Suite</div>
+                          <div class="overlay">
+                              <img id="ss" src="./icons/green/1_SS.svg" class="image glowing" alt="Sensorimotor Suite">
+                          </div>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <div id="cnBtn" class="mItem mBtn">
+                          <div class="text glowing">CogNets</div>
+                          <div class="overlay">
+                              <img id="cn" src="./icons/green/2_CN.svg" class="image glowing" alt="CogNets">
+                          </div>
+                      </div>
+                    </div>
+                    <div class="column mResp">
+                        <div class="humCat">
+                            <h4>SINGLE<br />HUMAN</h4>
+                        </div>
+                    </div>
+                    <div class="column mResp">
+                        <div class="mItem">
+                            <div class="text">Single-player</div>
+                            <div class="overlay">
+                                <img id="sp" src="./icons/3_SP.svg" class="image" alt="Single Player">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div id="csBtn" class="mItem mBtn">
+                            <div class="text glowing">Centaur<br>Syzygy</div>
+                            <div class="overlay">
+                                <img id="cs" src="./icons/green/4_CS.svg" class="image glowing" alt="Centaur Syzygy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div id="ocBtn" class="mItem mBtn">
+                            <div class="text glowing">Omni-<br>Chimera</div>
+                            <div class="overlay">
+                                <img id="oc" src="./icons/green/5_OC.svg" class="image glowing" alt="Omni-Chimera">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column mResp">
+                        <div class="humCat">
+                            <h4>MANY<br />HUMANS</h4>
+                        </div>
+                    </div>
+                    <div class="column mResp">
+                        <div class="mItem">
+                            <div class="text">MMORPG</div>
+                            <div class="overlay">
+                                <img id="mmo" src="./icons/6_MMORPG.svg" class="image" alt="MMORPG">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div id="wcBtn" class="mItem mBtn">
+                            <div class="text glowing">Wetware<br>Choreography</div>
+                            <div class="overlay">
+                                <img id="wc" src="./icons/green/7_WC.svg" class="image glowing" alt="Wetware Choreography">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div id="mmBtn" class="mItem mBtn">
+                            <div class="text glowing">MMARPG</div>
+                            <div class="overlay">
+                                <img id="mma" src="./icons/green/8_MMARPG.svg" class="image glowing" alt="MMARPG">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sec3 fullPage panel">
+        <div class="vidWrap">
+            <style>
+                .embed-container {
+                    position: relative;
+                    padding-bottom: 56.25%;
+                    height: 0;
+                    overflow: hidden;
+                    max-width: 100%;
+                }
+
+                .embed-container iframe,
+                .embed-container object,
+                .embed-container embed {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            </style>
+            <div class='embed-container boxGlow'><iframe src='https://player.vimeo.com/video/840567244?h=c174cd3c85' frameborder='0'
+                    webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+
+        </div>
+    </div>
+    <footer class="footer fullPage">
+      <div class="content">
+        <div class="credit roundBorder">
+          <div class="cBox c1">
+              <p>
+                  <b>Studio Researchers</b><br />
+                  <a href="https://freudenheim.info/" target="_blank">Will Freudenheim</a><br />
+                  <a href="https://christina.lu/" target="_blank">Christina Lu</a><br />
+                  <a href="https://dalena.me" target="_blank">Dalena Tran</a><br />
+              </p>
+          </div>
+          <div class="cBox c2">
+              <p>
+                  <b>Program Director</b><br />
+                  Benjamin Bratton<br /><br />
+                  <b>Studio Director</b><br />
+                  Nicolay Boyadjiev<br /><br />
+                  <b>Associate Director</b><br />
+                  Stephanie Sherman<br />
+              </p>
+          </div>
+          <div class="cBox c3">
+              <p>
+                  <b>Senior Program Manager</b><br />
+                  Emily Knapp<br /><br />
+                  <b>Network Operatives</b><br />
+                  Dasha Silkina<br />
+                  Andrew Karabanov<br /><br />
+                  <b>Art Direction</b><br />
+                  Case Miller<br /><br />
+              </p>
+          </div>
+          <div class="cBox c4">
+              <p>
+                  <b>Sound Design</b><br />
+                  Daphne Xanthopoulou<br /><br />
+                  <b>Graphic Design</b><br />
+                  Khalisha Tambunan<br /><br />
+                  <b>Voiceover Engineer</b><br />
+                  Sam Horn<br /><br />
+                  <b>Editor</b><br />
+                  Guy Mackinnon-Little<br />
+              </p>
+
+          </div>
+          <div class="cBox c5">
+              <p>
+                  Thanks to The Berggruen Institute and One Project for their support for the inaugural year of Antikythera.
+              </p>
               <br />
-              <h2>Embodied intelligence refers to types of cognition in which the “body” plays a decisive role.
-                  Artificializing such processes is necessary for AI to make the leap from language-wielding to
-                  world-making. Yet training in the real world is prohibitively expensive, impossible to
-                  parallelize, and difficult to control. Instead, agents are trained in toy worlds: controlled
-                  simulations in which reality is abstracted into a bounded domain. Toy worlds allow for quick
-                  iteration, broad proliferation, and streamlined data synthesis in pursuit of embodied
-                  intelligence. Negotiating the intricacies of human interaction also becomes possible at scale
-                  within them.
-              </h2>
+              <p>
+                  Special thanks to Nicolas Berggruen, Nils Gilman, Dawn Nakagawa, Justin Rosenstein, and Raphael Arar for their visionary support and participation.
+              </p>
               <br />
-              <h2>
-                  If AI agents are to exist in the real world, they will require a collaborative repository and
-                  training platform: Vivarium, a diverse ecosystem of interoperable toy worlds. Composed of an
-                  asset store, a simulation engine, and a toy world library, Vivarium turns training embodied
-                  agents into play. Within these gamified worlds, different genres of human-AI configurations
-                  encourage learning from basic movement to interactive negotiation, adversarial feints to
-                  stigmergic coordination. Future agents will have sensoriums as diverse as the physical forms
-                  they take; they will rehearse and scaffold complex embodied intelligence across the sim to the
-                  real. Through Vivarium, an unrecognizable world remade by physicalized AI becomes possible.
-              </h2>
-              <br>
-              <a href="./docs/Vivarium_290623.pdf" target="_blank">
-                  <h2>Read ⟶</h2>
-              </a>
+              <p>
+                  Additional thanks to Sara Drake and Imran Sekalala for ideating and contributing to the first iteration of this project.
+              </p>
+
+          </div>
+          <div class="cBox c6">
+              <p><span>Press and inquiries → contact</span><span style="display:none;">no
+                      scraping</span><span>@</span><span>vivarium.host</span></p>
+          </div>
+          <div class="cBox">
+
+          </div>
+          <div class="cBox">
+
+          </div>
+          <div class="cBox">
+
+          </div>
+          <div class="cBox c10">
+            <p>
+
+            <a href="https://antikythera.org" target="_blank"><img class="antiLogo"
+                    src="./img/antikythera.svg" alt=""></a></p>
           </div>
         </div>
-    </header>
-    <main class="fullPage">
-        <div class="sec2 fullPage flexCenter panel">
-            <div class="content">
-                <div class="matrixWrapper floating">
-                    <h3 class="glowing">HUMAN-AI CONFIGURATIONS</h3>
-                    <div class="matrix">
-                        <div class="column mTitle mResp">
-                            <div class="">
-                            </div>
-                        </div>
-                        <div class="column mTitle mResp">
-                            <div class="">
-                                <h4>NO AI</h4>
-                            </div>
-                        </div>
-                        <div class="column mTitle mResp">
-                            <div class="">
-                                <h4>SINGLE AI</h4>
-                            </div>
-                        </div>
-                        <div class="column mTitle mResp">
-                            <div class="">
-                                <h4>MANY AIs</h4>
-                            </div>
-                        </div>
-                        <div class="column mResp">
-                            <div class="humCat">
-                                <h4>NO<br />HUMAN</h4>
-                            </div>
-                        </div>
-                        <div class="column mResp">
-                            <div class="mItem" onclick="popup('cossimPop')">
-                                <div class="text">Cosmology<br>Simulation</div>
-                                <div class="overlay">
-                                </div>
-                                <div id="cossimPop">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <a href="./pages/sensorimotor_suite">
-                                <div class="mItem">
-                                    <div class="text glowing">Sensorimotor<br>Suite</div>
-                                    <div class="overlay">
-                                        <img id="ss" src="./icons/green/1_SS.svg" class="image glowing" alt="Senorimotor Suite">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column">
-                            <a href="./pages/cog_nets">
-                                <div class="mItem">
-                                    <div class="text glowing">CogNets</div>
-                                    <div class="overlay">
-                                        <img id="cn" src="./icons/green/2_CN.svg" class="image glowing" alt="CogNets">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column mResp">
-                            <div class="humCat">
-                                <h4>SINGLE<br />HUMAN</h4>
-                            </div>
-                        </div>
-                        <div class="column mResp">
-                            <div class="mItem">
-                                <div class="text">Single-player</div>
-                                <div class="overlay">
-                                    <img id="sp" src="./icons/3_SP.svg" class="image" alt="Single Player">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <a href="./pages/centaur_syzygy">
-                                <div class="mItem">
-                                    <div class="text glowing">Centaur<br>Syzygy</div>
-                                    <div class="overlay">
-                                        <img id="cs" src="./icons/green/4_CS.svg" class="image glowing" alt="Centaur Syzygy">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column">
-                            <a href="./pages/omni_chimera">
-                                <div class="mItem">
-                                    <div class="text glowing">Omni-<br>Chimera</div>
-                                    <div class="overlay">
-                                        <img id="oc" src="./icons/green/5_OC.svg" class="image glowing" alt="Omni-Chimera">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column mResp">
-                            <div class="humCat">
-                                <h4>MANY<br />HUMANS</h4>
-                            </div>
-                        </div>
-                        <div class="column mResp">
-                            <div class="mItem">
-                                <div class="text">MMORPG</div>
-                                <div class="overlay">
-                                    <img id="mmo" src="./icons/6_MMORPG.svg" class="image" alt="MMORPG">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <a href="./pages/wetware_choreography">
-                                <div class="mItem">
-                                    <div class="text glowing">Wetware<br>Choreography</div>
-                                    <div class="overlay">
-                                        <img id="wc" src="./icons/green/7_WC.svg" class="image glowing" alt="Wetware Choreography">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="column">
-                            <a href="./pages/MMARPG">
-                                <div class="mItem">
-                                    <div class="text glowing">MMARPG</div>
-                                    <div class="overlay">
-                                        <img id="mma" src="./icons/green/8_MMARPG.svg" class="image glowing" alt="MMARPG">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="sec3 fullPage panel">
-            <div class="vidWrap">
-                <style>
-                    .embed-container {
-                        position: relative;
-                        padding-bottom: 56.25%;
-                        height: 0;
-                        overflow: hidden;
-                        max-width: 100%;
-                    }
-
-                    .embed-container iframe,
-                    .embed-container object,
-                    .embed-container embed {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                    }
-                </style>
-                <div class='embed-container boxGlow'><iframe src='https://player.vimeo.com/video/840567244?h=c174cd3c85' frameborder='0'
-                        webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
-
-            </div>
-        </div>
-        <footer class="footer fullPage">
-            <div class="content">
-                <div class="credit roundBorder">
-                    <div class="cBox c1">
-                        <p>
-                            <b>Studio Researchers</b><br />
-                            <a href="https://freudenheim.info/" target="_blank">Will Freudenheim</a><br />
-                            <a href="https://christina.lu/" target="_blank">Christina Lu</a><br />
-                            <a href="https://dalena.me" target="_blank">Dalena Tran</a><br />
-                        </p>
-                    </div>
-                    <div class="cBox c2">
-                        <p>
-                            <b>Program Director</b><br />
-                            Benjamin Bratton<br /><br />
-                            <b>Studio Director</b><br />
-                            Nicolay Boyadjiev<br /><br />
-                            <b>Associate Director</b><br />
-                            Stephanie Sherman<br />
-                        </p>
-                    </div>
-                    <div class="cBox c3">
-                        <p>
-                            <b>Senior Program Manager</b><br />
-                            Emily Knapp<br /><br />
-                            <b>Network Operatives</b><br />
-                            Dasha Silkina<br />
-                            Andrew Karabanov<br /><br />
-                            <b>Art Direction</b><br />
-                            Case Miller<br /><br />
-                        </p>
-                    </div>
-                    <div class="cBox c4">
-                        <p>
-                            <b>Sound Design</b><br />
-                            Daphne Xanthopoulou<br /><br />
-                            <b>Graphic Design</b><br />
-                            Khalisha Tambunan<br /><br />
-                            <b>Voiceover Engineer</b><br />
-                            Sam Horn<br /><br />
-                            <b>Editor</b><br />
-                            Guy Mackinnon-Little<br />
-                        </p>
-
-                    </div>
-                    <div class="cBox c5">
-                        <p>
-                            Thanks to The Berggruen Institute and One Project for their support for the inaugural
-                            year of Antikythera.
-                        </p>
-                        <br />
-                        <p>
-                            Special thanks to Nicolas Berggruen, Nils Gilman, Dawn Nakagawa, Justin Rosenstein, and Raphael
-                            Arar
-                            for their visionary support and participation.
-                        </p>
-                        <br />
-                        <p>
-                            Additional thanks to Sara Drake and Imran Sekalala for ideating and contributing to the first iteration of this project.
-                        </p>
-
-                    </div>
-                    <div class="cBox c6">
-                        <p><span>Press and inquiries → contact</span><span style="display:none;">no
-                                scraping</span><span>@</span><span>vivarium.host</span></p>
-                    </div>
-                    <div class="cBox">
-
-                    </div>
-                    <div class="cBox">
-
-                    </div>
-                    <div class="cBox">
-
-                    </div>
-                    <div class="cBox c10">
-                      <p>
-
-                      <a href="https://antikythera.org" target="_blank"><img class="antiLogo"
-                              src="./img/antikythera.svg" alt=""></a></p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </main>
+      </div>
+    </footer>
+  </main>
 </body>
+
 <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
     integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
-<script src="./js/scroll.js"></script>
+  <script src="./js/modal.js"></script>
 </html>
