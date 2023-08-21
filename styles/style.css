@@ -281,19 +281,21 @@ h4 {
  -webkit-transition: all .7s ease;
 }
 
-.mItem:hover .overlay {
-  opacity: 1;
-}
+@media (hover) {
+  .mItem:hover .overlay {
+    opacity: 1;
+  }
 
-.mItem:hover {
-  background: #1F2020;
-  text-shadow: none;
-  transition: all .7s ease;
-  -webkit-transition: all .7s ease;
-}
+  .mItem:hover {
+    background: #1F2020;
+    text-shadow: none;
+    transition: all .7s ease;
+    -webkit-transition: all .7s ease;
+  }
 
-.mItem:hover .text {
-  opacity: 0;
+  .mItem:hover .text {
+    opacity: 0;
+  }
 }
 
 #ss {
@@ -745,7 +747,7 @@ h4 {
   }
 
   .mItem {
-      border: 1px solid #D4D3A6;
+      border: 1px solid #9AFE27;
   }
 
   .mItem:hover {
@@ -825,18 +827,18 @@ h4 {
   }
 
   .modalContent {
-    max-height: 50%;
+    max-height: 60%;
     width: 90%;
   }
 
   .catIcon {
-    width: 12vh;
-    height: 12vh;
+    width: 10vh;
+    height: 10vh;
   }
 
   .close {
-    width: 10vh;
-    height: 10vh;
+    width: 9vh;
+    height: 9vh;
   }
 
   .vidWrap {
