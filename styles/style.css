@@ -1,6 +1,7 @@
 @font-face {
   font-family: WalterAlte;
   src: url("../fonts/ABCWalterAlte-Rauchwaren.woff2");
+  font-weight: 400;
 }
 
 @font-face {
@@ -19,15 +20,18 @@
   src: url("../fonts/Kapitol-SemiBold.otf");
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0.3rem;
+  filter: none;
 }
 
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
+  filter: none;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
+  filter: none;
   background-color: darkgrey;
   border-radius: 0.5rem;
 }
@@ -38,6 +42,7 @@ body {
   font-family: WalterAlte, Helvetica, Arial, sans-serif;
   color: #747C74;
   font-size: 1.15rem;
+  font-weight: 400;
   margin: 0px;
   overflow-x: hidden;
   transition: all 0.5s ease;
@@ -114,6 +119,7 @@ h4 {
 h2 {
   font-family: WalterAlte;
   font-size: 1rem;
+  font-weight: 400;
   padding: 0;
   margin: 0;
 }
@@ -738,9 +744,10 @@ h4 {
 
   .mItem {
       border: 1px solid #D4D3A6;
-      transition: all .7s ease;
-      -webkit-transition: all .7s ease;
+  }
 
+  .mItem:hover {
+    background: none;
   }
 
   .credit {
