@@ -109,7 +109,18 @@ a {
 }
 
 a:hover {
-  text-shadow: 0 0 10px #9AFE27;
+  transition: all 0.5s ease;
+  -webkit-animation: textGlow 0.8s ease-in-out infinite alternate;
+  animation: textGlow 0.8s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes textGlow {
+  from {
+    text-shadow: none;
+  }
+  to {
+    text-shadow: 0 0 10px #9AFE27;
+  }
 }
 
 h1 {
@@ -252,11 +263,6 @@ h4 {
   justify-content: center;
   color: #D4D3A6;
   font-size: 0.8rem;
-  transition: opacity 0.75s ease-in-out;
-}
-
-.column a {
-  text-decoration: none;
 }
 
 .image {
@@ -269,32 +275,31 @@ h4 {
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
+  z-index: 20;
   opacity: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  width: inherit;
+  height: inherit;
+  filter: none !important;
+  transition: all .7s ease-out;
+  -webkit-transition: all .7s ease-out;
+}
+
+.mBtn > .catBlink {
   transition: all .7s ease;
- -webkit-transition: all .7s ease;
+  -webkit-transition: all .7s ease;
+}
+
+.mBtn > .blinkB {
+  filter: drop-shadow(0px 0px 5px #9AFE27);
 }
 
 @media (hover) {
-  .mItem:hover .overlay {
+  .mBtn:hover > .overlay {
     opacity: 1;
-  }
-
-  .mItem:hover {
-    background: #1F2020;
-    text-shadow: none;
-    transition: all .7s ease;
-    -webkit-transition: all .7s ease;
-  }
-
-  .mItem:hover .text {
-    opacity: 0;
+    transition: all .7s ease-in;
+    -webkit-transition: all .7s ease-in;
   }
 }
 
@@ -374,37 +379,6 @@ h4 {
   filter: drop-shadow(0px 0px 15px #9AFE27);
 }
 
-.catBlink {
-  position: absolute;
-  animation-name: blinking;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 2s;
-}
-
-@keyframes blinking {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.blinkA {
-  animation-direction: alternate;
-}
-
-.blinkB {
-  animation-direction: alternate-reverse;
-}
-
 .modalContent {
   width: 50%;
   color: #9AFE27;
@@ -414,6 +388,7 @@ h4 {
 
 .mBtn {
   cursor: pointer;
+  background: #1F2020;
 }
 
 .close {
@@ -534,7 +509,8 @@ h4 {
 }
 
 .antiLogo:hover {
-  filter: drop-shadow(0px 0px 15px #9AFE27);
+  -webkit-animation: glow 0.8s ease-in-out infinite alternate;
+  animation: glow 0.8s ease-in-out infinite alternate;
 }
 
 .credit {
@@ -600,8 +576,13 @@ h4 {
 }
 
 .glowing {
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+  -webkit-animation: glow 0.5s ease-in-out infinite alternate;
+  animation: glow 0.5s ease-in-out infinite alternate;
+}
+
+.glowingSlow {
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes glow {
@@ -610,9 +591,41 @@ h4 {
   }
   to {
     color: #9AFE27;
-    filter: drop-shadow(0px 0px 5px #9AFE27);
+    filter: drop-shadow(0px 0px 15px #9AFE27);
   }
 }
+
+.catBlink {
+  position: absolute;
+  animation-name: blinking;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.blinkA {
+  animation-direction: alternate;
+}
+
+.blinkB {
+  animation-direction: alternate-reverse;
+}
+
 
 /* RESPONSIVE */
 
@@ -788,11 +801,6 @@ h4 {
   h3 {
       font-size: 2rem;
   }
-
-  /* .logo {
-    width: 100vw;
-    height: 45vh;
-  } */
 
   .logo model-viewer {
     width: 100%;
