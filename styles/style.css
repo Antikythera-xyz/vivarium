@@ -188,8 +188,6 @@ h4 {
 }
 
 .description {
-  max-height: 50vh;
-  overflow-y: auto;
   margin: 1rem 0;
 }
 
